@@ -22,6 +22,9 @@ func uuid() string {
 	return pre + suf
 }
 
+var sessionHandlerMap map[string]func()*Hand
+
+
 var sessionMap map[string]map[string]interface{}
 
 type Session struct {
